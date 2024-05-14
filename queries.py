@@ -42,5 +42,5 @@ def get_engine_data(engine_id):
         
 
 
-engine("001")
-aircraft("001")
+#engine("001")
+#aircraft("001")

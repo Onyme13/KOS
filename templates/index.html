@@ -3,51 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aircraft Digital Twin Dashboard</title>
+    <title>Select Aircraft</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef2f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 1em;
+            margin-top: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <div class="dashboard">
-        <h1>Aircraft Engine Monitor</h1>
-        <h2><strong> Aircraft: </strong> {{aircraft}} </h2>
-        <div class="data-display">
-            <div class="engine-column">
-                <div class="data-box">
-                    <h2>Engine 1 Temperature</h2>
-                    <p id="temperature1">{{ temperature1 }}</p>
-                </div>
-                <div class="data-box">
-                    <h2>Engine 1 Vibration Level</h2>
-                    <p id="vibration1">{{ vibration1 }}</p>
-                </div>
-                <div class="data-box">
-                    <h2>Engine 3 Temperature</h2>
-                    <p id="temperature2">{{ temperature3 }}</p>
-                </div>
-                <div class="data-box">
-                    <h2>Engine 3 Vibration Level</h2>
-                    <p id="vibration2">{{ vibration3 }}</p>
-                </div>
-            </div>
-            <div class="engine-column">
-                <div class="data-box">
-                    <h2>Engine 2 Temperature</h2>
-                    <p id="temperature3">{{ temperature2 }}</p>
-                </div>
-                <div class="data-box">
-                    <h2>Engine 2 Vibration Level</h2>
-                    <p id="vibration3">{{ vibration2 }}</p>
-                </div>
-                <div class="data-box">
-                    <h2>Engine 4 Temperature</h2>
-                    <p id="temperature4">{{ temperature4 }}</p>
-                </div>
-                <div class="data-box">
-                    <h2>Engine 4 Vibration Level</h2>
-                    <p id="vibration4">{{ vibration4 }}</p>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <h1>Select Aircraft</h1>
+        <form action="/aircraft" method="get">
+            <select name="aircraft" id="aircraft">
+                <option value="aircraft1">Aircraft 1</option>
+                <option value="aircraft2">Aircraft 2</option>
+                <option value="aircraft3">Aircraft 3</option>
+                <option value="aircraft4">Aircraft 4</option>
+            </select>
+            <button type="submit">Go</button>
+        </form>
     </div>
 </body>
 </html>
