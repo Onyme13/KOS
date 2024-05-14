@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Digital Twin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Aircraft Engine Monitor</h1>
+        <h2><strong> Aircraft: </strong> {{aircraft}} </h2>
+        <div class="data-display">
+            <div class="engine-column">
+                <div class="data-box">
+                    <h2>Engine 1 Temperature</h2>
+                    <p id="temperature1">{{ temperature1 }}</p>
+                </div>
+                <div class="data-box">
+                    <h2>Engine 1 Vibration Level</h2>
+                    <p id="vibration1">{{ vibration1 }}</p>
+                </div>
+                <div class="data-box">
+                    <h2>Engine 3 Temperature</h2>
+                    <p id="temperature2">{{ temperature3 }}</p>
+                </div>
+                <div class="data-box">
+                    <h2>Engine 3 Vibration Level</h2>
+                    <p id="vibration2">{{ vibration3 }}</p>
+                </div>
+            </div>
+            <div class="engine-column">
+                <div class="data-box">
+                    <h2>Engine 2 Temperature</h2>
+                    <p id="temperature3">{{ temperature2 }}</p>
+                </div>
+                <div class="data-box">
+                    <h2>Engine 2 Vibration Level</h2>
+                    <p id="vibration3">{{ vibration2 }}</p>
+                </div>
+                <div class="data-box">
+                    <h2>Engine 4 Temperature</h2>
+                    <p id="temperature4">{{ temperature4 }}</p>
+                </div>
+                <div class="data-box">
+                    <h2>Engine 4 Vibration Level</h2>
+                    <p id="vibration4">{{ vibration4 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
