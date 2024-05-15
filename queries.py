@@ -41,6 +41,20 @@ def aircraft(airplane_id):
     # Return the aircraft data
     return response, aircraft_id, model, serial_number
 
+
+
+
+
+
+
+"""({'id': 'urn:ngsi-ld:Aircraft:001', 'type': 'Aircraft', 'aircraftModel': {'type': 'Property', 'value': 'Boeing 747'}, 
+'serialNumber': {'type': 'Property', 'value': 'SN123456'}, 
+'manufactureDate': {'type': 'Property', 'value': '2020-01-01T00:00:00Z'}, 
+'manufacturedBy': {'type': 'Relationship', 'object': 'urn:ngsi-ld:Manufacturer:001'}, 
+'hasEngine': {'type': 'Relationship', 'object': 'urn:ngsi-ld:Engine:001'}}"""
+
+
+
 def engine(engine_id):
     engine = requests.get(url=f'http://localhost:1026/ngsi-ld/v1/entities/urn:ngsi-ld:Engine:{engine_id}')
     engine_response = engine.json()
@@ -85,3 +99,5 @@ def get_engine_data(engine_id):
    # Return the vibration value and temperature value
     return vibration_value, temperature_value
 
+
+print(aircraft("001"))
