@@ -1,0 +1,122 @@
+[
+    {
+        "id": "urn:ngsi-ld:Aircraft:002",
+        "type": "Aircraft",
+        "aircraftModel": {
+            "type": "Property",
+            "value": "Airbus A380"
+        },
+        "serialNumber": {
+            "type": "Property",
+            "value": "SN789012"
+        },
+        "manufactureDate": {
+            "type": "Property",
+            "value": "2021-05-15T00:00:00Z"
+        },
+        "manufacturedBy": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Manufacturer:002"
+        },
+        "hasEngine": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Engine:005"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:Manufacturer:002",
+        "type": "Manufacturer",
+        "manufacturerName": {
+            "type": "Property",
+            "value": "Airbus"
+        },
+        "manufacturerAddress": {
+            "type": "Property",
+            "value": "Toulouse, France"
+        },
+        "manufacturerContact": {
+            "type": "Property",
+            "value": "contact@airbus.com"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:Engine:005",
+        "type": "Engine",
+        "engineModel": {
+            "type": "Property",
+            "value": "Trent 900"
+        },
+        "serialNumber": {
+            "type": "Property",
+            "value": "SN789012"
+        },
+        "manufactureDate": {
+            "type": "Property",
+            "value": "2021-04-10T00:00:00Z"
+        },
+        "manufacturedBy": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Manufacturer:002"
+        },
+        "hasMaintenanceRecord": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Maintenance:002"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:Maintenance:002",
+        "type": "Maintenance",
+        "lastMaintenanceDate": {
+            "type": "Property",
+            "value": "2022-01-01T00:00:00Z"
+        },
+        "nextMaintenanceDate": {
+            "type": "Property",
+            "value": "2022-07-01T00:00:00Z"
+        },
+        "maintenanceDetails": {
+            "type": "Property",
+            "value": "Engine inspection and turbine cleaning"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:vibration:002",
+        "type": "Vibration",
+        "vibrationValue": {
+            "type": "Property",
+            "value": 0.6
+        },
+        "vibrationUnit": {
+            "type": "Property",
+            "value": "m/s2"
+        },
+        "vibrationTime": {
+            "type": "Property",
+            "value": "2021-05-20T00:00:00Z"
+        },
+        "isSensorOf": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Engine:005"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:temperature:002",
+        "type": "Temperature",
+        "temperatureValue": {
+            "type": "Property",
+            "value": 55
+        },
+        "temperatureUnit": {
+            "type": "Property",
+            "value": "Celsius"
+        },
+        "temperatureTime": {
+            "type": "Property",
+            "value": "2021-05-20T00:00:00Z"
+        },
+        "isSensorOf": {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Engine:005"
+        }
+    }
+]
