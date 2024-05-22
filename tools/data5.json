@@ -1,0 +1,163 @@
+[
+    {
+        "id": "urn:ngsi-ld:vibration:010",
+        "type": "Vibration",
+        "vibrationValue": {
+        "type": "Property",
+        "value": 0.6
+        },
+        "vibrationUnit": {
+        "type": "Property",
+        "value": "m/s2"
+        },
+        "vibrationTime": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+        },
+        "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:005"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:temperature:010",
+        "type": "Temperature",
+        "temperatureValue": {
+        "type": "Property",
+        "value": 90
+        },
+        "temperatureUnit": {
+        "type": "Property",
+        "value": "Celsius"
+        },
+        "temperatureTime": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+        },
+        "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:005"
+        }
+    }
+    ,
+    {
+        "id": "urn:ngsi-ld:vibration:011",
+        "type": "Vibration",
+        "vibrationValue": {
+        "type": "Property",
+        "value": 0.1
+        },
+        "vibrationUnit": {
+        "type": "Property",
+        "value": "m/s2"
+        },
+        "vibrationTime": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+        },
+        "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:006"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:temperature:011",
+        "type": "Temperature",
+        "temperatureValue": {
+        "type": "Property",
+        "value": 23
+        },
+        "temperatureUnit": {
+        "type": "Property",
+        "value": "Celsius"
+        },
+        "temperatureTime": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+        },
+        "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:006"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:vibration:012",
+        "type": "Vibration",
+        "vibrationValue": {
+        "type": "Property",
+        "value": 0.2
+        },
+        "vibrationUnit": {
+        "type": "Property",
+        "value": "m/s2"
+        },
+        "vibrationTime": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+        },
+        "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:007"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:temperature:012",
+        "type": "Temperature",
+        "temperatureValue": {
+        "type": "Property",
+        "value": 25
+        },
+        "temperatureUnit": {
+        "type": "Property",
+        "value": "Celsius"
+        },
+        "temperatureTime": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+        },
+        "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:007"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:vibration:013",
+        "type": "Vibration",
+        "vibrationValue": {
+        "type": "Property",
+        "value": 0.3
+        },
+        "vibrationUnit": {
+        "type": "Property",
+        "value": "m/s2"
+        },
+        "vibrationTime": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+        },
+        "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:008"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:temperature:013",
+        "type": "Temperature",
+        "temperatureValue": {
+        "type": "Property",
+        "value": 27
+        },
+        "temperatureUnit": {
+        "type": "Property",
+        "value": "Celsius"
+        },
+        "temperatureTime": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+        },
+        "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:008"
+        }
+    }
+]

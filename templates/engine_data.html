@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine Data</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef2f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .data-box {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .data-box h2 {
+            margin-top: 0;
+        }
+
+        .data-box p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Engine Data</h1>
+        <div class="data-box">
+            <h2>Engine Model</h2>
+            <p>{{ engine[0]['engineModel']['value'] }}</p>
+        </div>
+        <div class="data-box">
+            <h2>Serial Number</h2>
+            <p>{{ engine[0]['serialNumber']['value'] }}</p>
+        </div>
+        <div class="data-box">
+            <h2>Manufacture Date</h2>
+            <p>{{ engine[0]['manufactureDate']['value'] }}</p>
+        </div>
+        <div class="data-box">
+            <h2>Manufactured By</h2>
+            <p>{{ engine[1]['manufacturerName']['value'] }}</p>
+            <p>{{ engine[1]['manufacturerAddress']['value'] }}</p>
+            <p>{{ engine[1]['manufacturerContact']['value'] }}</p>
+        </div>
+        <div class="data-box">
+            <h2>Last Maintenance Date</h2>
+            <p>{{ engine[2]['lastMaintenanceDate']['value'] }}</p>
+        </div>
+        <div class="data-box">
+            <h2>Next Maintenance Date</h2>
+            <p>{{ engine[2]['nextMaintenanceDate']['value'] }}</p>
+        </div>
+        <div class="data-box">
+            <h2>Maintenance Details</h2>
+            <p>{{ engine[2]['maintenanceDetails']['value'] }}</p>
+        </div>
+    </div>
+</body>
+</html>

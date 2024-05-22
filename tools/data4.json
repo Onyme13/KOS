@@ -1,0 +1,192 @@
+[{
+  "id": "urn:ngsi-ld:Engine:002",
+  "type": "Engine",
+  "engineModel": {
+    "type": "Property",
+    "value": "Model X"
+  },
+  "hasMaintenanceRecord": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Maintenance:002"
+  },
+  "manufactureDate": {
+    "type": "Property",
+    "value": "2020-01-01T00:00:00Z"
+  },
+  "manufacturedBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Manufacturer:001"
+  },
+  "serialNumber": {
+    "type": "Property",
+    "value": "SN123457"
+  }
+},
+{
+  "id": "urn:ngsi-ld:Engine:003",
+  "type": "Engine",
+  "engineModel": {
+    "type": "Property",
+    "value": "Model X"
+  },
+  "hasMaintenanceRecord": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Maintenance:003"
+  },
+  "manufactureDate": {
+    "type": "Property",
+    "value": "2020-01-01T00:00:00Z"
+  },
+  "manufacturedBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Manufacturer:001"
+  },
+  "serialNumber": {
+    "type": "Property",
+    "value": "SN123458"
+  }
+},
+{
+  "id": "urn:ngsi-ld:Engine:004",
+  "type": "Engine",
+  "engineModel": {
+    "type": "Property",
+    "value": "Model X"
+  },
+  "hasMaintenanceRecord": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Maintenance:004"
+  },
+  "manufactureDate": {
+    "type": "Property",
+    "value": "2020-01-01T00:00:00Z"
+  },
+  "manufacturedBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Manufacturer:001"
+  },
+  "serialNumber": {
+    "type": "Property",
+    "value": "SN123459"
+  }
+},
+{
+  "id": "urn:ngsi-ld:Engine:006",
+  "type": "Engine",
+  "engineModel": {
+    "type": "Property",
+    "value": "Model X"
+  },
+  "hasMaintenanceRecord": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Maintenance:006"
+  },
+  "manufactureDate": {
+    "type": "Property",
+    "value": "2020-01-01T00:00:00Z"
+  },
+  "manufacturedBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Manufacturer:001"
+  },
+  "serialNumber": {
+    "type": "Property",
+    "value": "SN123461"
+  }
+},
+{
+  "id": "urn:ngsi-ld:Engine:007",
+  "type": "Engine",
+  "engineModel": {
+    "type": "Property",
+    "value": "Model X"
+  },
+  "hasMaintenanceRecord": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Maintenance:007"
+  },
+  "manufactureDate": {
+    "type": "Property",
+    "value": "2020-01-01T00:00:00Z"
+  },
+  "manufacturedBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Manufacturer:001"
+  },
+  "serialNumber": {
+    "type": "Property",
+    "value": "SN123462"
+  }
+},
+{
+  "id": "urn:ngsi-ld:Engine:008",
+  "type": "Engine",
+  "engineModel": {
+    "type": "Property",
+    "value": "Model X"
+  },
+  "hasMaintenanceRecord": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Maintenance:008"
+  },
+  "manufactureDate": {
+    "type": "Property",
+    "value": "2020-01-01T00:00:00Z"
+  },
+  "manufacturedBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Manufacturer:001"
+  },
+  "serialNumber": {
+    "type": "Property",
+    "value": "SN123463"
+  }
+},
+{
+  "id": "urn:ngsi-ld:Engine:009",
+  "type": "Engine",
+  "engineModel": {
+    "type": "Property",
+    "value": "Model X"
+  },
+  "hasMaintenanceRecord": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Maintenance:009"
+  },
+  "manufactureDate": {
+    "type": "Property",
+    "value": "2020-01-01T00:00:00Z"
+  },
+  "manufacturedBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Manufacturer:001"
+  },
+  "serialNumber": {
+    "type": "Property",
+    "value": "SN123464"
+  }
+},
+{
+  "id": "urn:ngsi-ld:Engine:010",
+  "type": "Engine",
+  "engineModel": {
+    "type": "Property",
+    "value": "Model X"
+  },
+  "hasMaintenanceRecord": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Maintenance:010"
+  },
+  "manufactureDate": {
+    "type": "Property",
+    "value": "2020-01-01T00:00:00Z"
+  },
+  "manufacturedBy": {
+    "type": "Relationship",
+    "object": "urn:ngsi-ld:Manufacturer:001"
+  },
+  "serialNumber": {
+    "type": "Property",
+    "value": "SN123465"
+  }
+}]

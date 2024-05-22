@@ -1,0 +1,46 @@
+
+[
+
+    {
+        "id": "urn:ngsi-ld:vibration:020",
+        "type": "Vibration",
+        "vibrationValue": {
+        "type": "Property",
+        "value": 0.22
+        },
+        "vibrationUnit": {
+        "type": "Property",
+        "value": "m/s2"
+        },
+        "vibrationTime": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+        },
+        "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:001"
+        }
+    },
+    {
+        "id": "urn:ngsi-ld:temperature:020",
+        "type": "Temperature",
+        "temperatureValue": {
+        "type": "Property",
+        "value": 42
+        },
+        "temperatureUnit": {
+        "type": "Property",
+        "value": "Celsius"
+        },
+        "temperatureTime": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+        },
+        "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:001"
+        }
+    }
+]
+
+

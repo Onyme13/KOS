@@ -1,0 +1,79 @@
+[{
+    "id": "urn:ngsi-ld:vibration:002",
+    "type": "Vibration",
+    "vibrationValue": {
+        "type": "Property",
+        "value": 0.7
+    },
+    "vibrationUnit": {
+        "type": "Property",
+        "value": "m/s2"
+    },
+    "vibrationTime": {
+        "type": "Property",
+        "value": "2024-05-16T00:00:00Z"
+    },
+    "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:001"
+    }
+},
+{
+    "id": "urn:ngsi-ld:temperature:002",
+    "type": "Temperature",
+    "temperatureValue": {
+        "type": "Property",
+        "value": 55
+    },
+    "temperatureUnit": {
+        "type": "Property",
+        "value": "Celsius"
+    },
+    "temperatureTime": {
+        "type": "Property",
+        "value": "2024-05-16T00:00:00Z"
+    },
+    "isSensorOf": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Engine:001"
+    }
+},
+{
+    "id": "urn:ngsi-ld:Aircraft:003",
+    "type": "Aircraft",
+    "aircraftModel": {
+        "type": "Property",
+        "value": "Boeing 747"
+    },
+    "serialNumber": {
+        "type": "Property",
+        "value": "SN123456"
+    },
+    "manufactureDate": {
+        "type": "Property",
+        "value": "2020-01-01T00:00:00Z"
+    },
+    "manufacturedBy": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Manufacturer:001"
+    },
+    "hasEngine": [
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Engine:007"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Engine:008"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Engine:009"
+        },
+        {
+            "type": "Relationship",
+            "object": "urn:ngsi-ld:Engine:010"
+        }
+    ]
+}
+]

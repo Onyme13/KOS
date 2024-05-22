@@ -2,7 +2,7 @@ import json
 import requests
 
 # Read data.json file
-with open('tools/data2.json') as f:
+with open('tools/data6.json') as f:
     data = json.load(f)
 
     for entity in data:

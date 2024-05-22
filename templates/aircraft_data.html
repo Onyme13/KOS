@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Data</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef2f5;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .data-box {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .data-box h2 {
+            margin-top: 0;
+        }
+
+        .data-box p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aircraft Data</h1>
+        <div class="data-box">
+            <h2>Aircraft Model</h2>
+            <p>{{ aircraft['aircraftModel']['value'] }}</p>
+        </div>
+        <div class="data-box">
+            <h2>Serial Number</h2>
+            <p>{{ aircraft['serialNumber']['value'] }}</p>
+        </div>
+        <div class="data-box">
+            <h2>Manufacture Date</h2>
+            <p>{{ aircraft['manufactureDate']['value'] }}</p>
+        </div>
+        <div class="data-box">
+            <h2>Manufactured By</h2>
+            <p>{{ aircraft['manufacturedBy']['object'] }}</p>
+        </div>
+        <div class="data-box">
+            <h2>Engine</h2>
+            <p>{{ aircraft['hasEngine']['object'] }}</p>
+        </div>
+    </div>
+</body>
+</html>

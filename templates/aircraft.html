@@ -18,55 +18,65 @@
             display: inline-block;
             text-decoration: none;
         }
-
         .data-button:hover {
             background-color: #0056b3;
         }
+        .engine-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #c8d6e6;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .engine-button:hover {
+            background-color: #0056b3;
+        }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
 </head>
 <body>
     <div class="dashboard">
         <h1>Aircraft Engine Monitor</h1>
-        <h2><strong> Aircraft: </strong> {{aircraft}} </h2>
-        <div class="data-display">
-            <div class="engine-column">
+        <h2>{{ aircraft }}</h2>
+        <div class="data-display" id="data-display">
+            {% for engine in engine_data %}
+            <div class="engine-column" id="engine-{{ engine.engine }}">
                 <div class="data-box">
-                    <h2>Engine 1 Temperature</h2>
-                    <p id="temperature1">{{ temperature1 }}</p>
+                    <h2><strong>{{ engine.engine }}</strong> Temperature</h2>
+                    <p id="temperature-{{ engine.engine }}">{{ engine.temperature }}</p>
                 </div>
                 <div class="data-box">
-                    <h2>Engine 1 Vibration Level</h2>
-                    <p id="vibration1">{{ vibration1 }}</p>
+                    <h2><strong>{{ engine.engine }}</strong> Vibration Level</h2>
+                    <p id="vibration-{{ engine.engine }}">{{ engine.vibration }}</p>
                 </div>
-                <div class="data-box">
-                    <h2>Engine 3 Temperature</h2>
-                    <p id="temperature2">{{ temperature3 }}</p>
-                </div>
-                <div class="data-box">
-                    <h2>Engine 3 Vibration Level</h2>
-                    <p id="vibration2">{{ vibration3 }}</p>
-                </div>
+                <a href="{{ url_for('engine_data', engine=engine.engine) }}" class="engine-button">View Engine Data</a>
             </div>
-            <div class="engine-column">
-                <div class="data-box">
-                    <h2>Engine 2 Temperature</h2>
-                    <p id="temperature3">{{ temperature2 }}</p>
-                </div>
-                <div class="data-box">
-                    <h2>Engine 2 Vibration Level</h2>
-                    <p id="vibration3">{{ vibration2 }}</p>
-                </div>
-                <div class="data-box">
-                    <h2>Engine 4 Temperature</h2>
-                    <p id="temperature4">{{ temperature4 }}</p>
-                </div>
-                <div class="data-box">
-                    <h2>Engine 4 Vibration Level</h2>
-                    <p id="vibration4">{{ vibration4 }}</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
-        <a href="/aircraft_data" class="data-button">View Aircraft Data</a>
+        <a href="{{ url_for('aircraft_data', aircraft=aircraft) }}" class="data-button">View Aircraft Data</a>
     </div>
+    <script>
+        var socket = io();
+
+        socket.on('connect', function() {
+            console.log('Connected to server');
+        });
+
+        socket.on('disconnect', function() {
+            console.log('Disconnected from server');
+        });
+
+        socket.on('update_engine_data', function(data) {
+            data.forEach(engine => {
+                document.getElementById('temperature-' + engine.engine).innerText = engine.temperature;
+                document.getElementById('vibration-' + engine.engine).innerText = engine.vibration;
+            });
+        });
+    </script>
 </body>
 </html>
